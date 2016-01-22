@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+img{display:block;}
+p,a,h1,h2,h3,h4,h5,h6,ul,ol,li,span,section,article,nav,footer,figcaption{font-family: 'Comfortaa', cursive;color:#555;letter-spacing:0.8px;}
+a{text-decoration:none;}
+/**********************************/
+/*********fin du reset CSS*********/
+/**********************************/
+
+body > header{background-image:url('../images/payments-banner-graphic.png');padding:20px 0;padding-bottom:150px;}
+body > header figure a img{width:40px;}
+body > header figure figcaption a{text-transform:uppercase;color:#fff;font-weight:700;letter-spacing: 3px}
+body > header figure a img,body > header figure figcaption{display:inline-block;vertical-align:middle;margin-left:10px;}
+body > header nav ul li,body > header nav,body > header figure{display:inline-block;vertical-align:middle;}
+body > header nav{float:right;margin-top:7px;}
+body > header nav ul li a{color:#fff;text-transform:uppercase;font-size:14px;position:relative;}
+body > header nav ul li a:hover{color:#333;}
+body > header nav ul li{margin-right:20px;}
+body > header h1{font-size:30px;color:#fff;text-align:center;margin-top:100px;}
+body > header h2{color:#fff;margin-top:25px;text-align:center;font-family:times;font-size:20px;}
+body > header button{padding:10px 20px;margin:0 auto;display:block;background:#fff;border:none;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;text-transform:uppercase;color:#8787bb;margin-top:25px;}
+body > header button:hover{color:#333;}
+
+/**********************************/
+/*********fin du header CSS*********/
+/**********************************/
+
+#triple-colonne article {display:flex;flex-direction: row;justify-content:center;padding:80px 0;}
+#triple-colonne article ul{text-align:center;padding:0 90px;}
+#triple-colonne article ul li:nth-child(2){margin-top:30px;margin-bottom:15px;}
+#triple-colonne article ul li:last-child{font-size:12px;}
+#triple-colonne article ul li:first-child{width:130px;height:130px;margin:0 auto;}
+#beautiful{border-left:1px solid #ccc;border-right:1px solid #ccc;}
+#quick li:first-child{background-image:url('../images/payments-calendar-icon.svg');background-repeat:no-repeat;}
+#beautiful li:first-child{background-image:url('../images/payments-mail-icon.svg');background-repeat:no-repeat;}
+#secure li:first-child{background-image:url('../images/payments-methods-icon.svg');background-repeat:no-repeat;}
+
+
+/********************************************************/
+/*********fin du 3 colonne secure/beautiful/quick CSS*********/
+/********************************************************/
+
+#price{background:#efefef;}
+#price article{display:flex;flex-direction: column;text-align:center;padding-top:70px;}
+#price article header h3{text-transform:uppercase;margin-bottom:10px;color:#aaa;}
+#price article section{display:flex;flex-direction: row;text-align:center;margin:0 auto;padding:40px 0 60px 0;}
+#price article section p{color:#8787bb;font-size:60px;padding-right:20px;}
+#price article section div{text-align:left;}
+#price article section div p {font-size:15px;color:#999;}
+#price article section div .paid-invoice{color:#555;font-size:35px;text-transform:uppercase;margin-bottom:5px;}
+#price article footer{background:#333;text-align:center;}
+#price article footer p{color:#ddd;font-size:20px;padding:20px 0;}
+
+
+/**********************************/
+/*********fin du prix CSS*********/
+/********************************/
+
+.container-pre{display:flex;flex-direction: raw;}
+.container-pre div{width:50%;text-align:left;}
+#invoice,#send,#paid{background-position:center;background-size:70%;}
+#invoice{background-image:url('../images/invoice.png');background-repeat:no-repeat;background-color:#66cccc;}
+#send{background-image:url('../images/send.png');background-repeat:no-repeat;background-color:#9884e5;}
+#paid{background-image:url('../images/paid.png');background-repeat:no-repeat;background-color:#66cccc;}
+#presentation .container-presentation{display:flex;flex-direction: column;justify-content:center;align-items:center;padding:100px 0;}
+#presentation .container-presentation h3{font-size:30px;padding-bottom:20px;}
+#presentation .container-presentation h3,#presentation .container-presentation p{width:400px;}
+
+/**********************************/
+/*********fin de presentation CSS*********/
+/********************************/
+
+#foot{background:#333;padding:70px 0;}
+#foot div{display:flex;flex-direction: raw;justify-content:center;text-transform:uppercase;font-weight:700;}
+#foot div ul li a{color:#aaa;font-weight:bold;}
+#foot div ul li a:hover{color:#ddd;}
+#foot div ul li{font-size:12px;padding-bottom:20px;}
+#foot div ul li:first-child a,#adress li:first-child{font-size:20px;color:#777;padding-bottom:30px;}
+#adress li:first-child{padding-bottom:20px;}
+#foot div ul li:last-child a{padding-bottom:0;}
+#company{padding:0 150px;}
+#adress li:last-child a{padding-right:10px;}
+#adress li:last-child a:hover{color:#ddd;}
+#legal{width:55%;margin:0 auto;padding-top:30px;}
+#legal p{text-transform:lowercase;font-size:12px;margin-right:20px;}
+
+
+
+/**********************************/
+/*********fin de footer CSS*********/
+/********************************/
+
+
+
+#back-to-top i{
+	background:#9884e5;padding:10px;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;position:fixed;bottom:10px;
+	right:10px;color:#fff;
+}
+#back-to-top i:hover{background-color:#3484e5;}
+
+
+/**********************************/
+/*********fin de back to top CSS*********/
+/********************************/
+
+
+
+
+
+@media screen and (max-width: 960px) {
+  #presentation .container-presentation h3,#presentation .container-presentation p{width:300px;}
+}
+@media screen and (max-width: 800px) {
+  #triple-colonne article{flex-direction:column;}
+   #triple-colonne article ul{border-left:none;border-right:none;margin-bottom:50px;}
+   #container-pre{
+   	flex-direction:column;
+   }
+    .container-pre{width:100%;flex-direction:column;}
+    .container-pre div{width:100%;}
+    #invoice, #send, #paid{
+    	min-height:400px;
+    }
+    #paid-container{flex-direction:column-reverse;}
+    #company{padding:0 40px;}
+}
